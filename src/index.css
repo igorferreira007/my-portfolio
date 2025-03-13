@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --default-font-family: "Montserrat", sans-serif;
+  --font-inconsolata: "Inconsolata", monospace;
+
+  /* DARK */
+  --color-red-500: #e3646e;
+  --color-purple-500: #bb72e9;
+  --color-blue-500: #3996db;
+  --color-green-500: #82bc4f;
+  --color-yellow-500: #eabd5f;
+  --color-gray-900: #0d0e11;
+  --color-gray-850: #3d3e41;
+  --color-gray-800: #16181d;
+  --color-gray-700: #292c34;
+  --color-gray-300: #878ea1;
+  --color-gray-200: #c0c4ce;
+  --color-gray-100: #e2e4e9;
+
+  /* LIGHT */
+  --color-teal-600: #1c9b91;
+  --color-green-700: #448d16;
+  --color-orange-600: #c66924;
+  --color-purple-600: #7d43b0;
+  --color-blue-700: #1542a0;
+  --color-stone-100: #f2f1ee;
+  --color-stone-200: #e9e7e2;
+  --color-stone-300: #d6d3cb;
+  --color-stone-400: #78715e;
+  --color-stone-500: #3f3b31;
+  --color-stone-600: #1d1b16;
+
+  --animate-pulse: pulse 5s ease infinite;
+
+  @keyframes pulse {
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  --animate-increase: increase 2s ease-in-out infinite;
+
+  @keyframes increase {
+    0% {
+      scale: 1;
+    }
+  
+    50% {
+      scale: 1.15;
+    }
+
+    100% {
+      scale: 1;
+    }
+  }
+}
+
+body {
+  background-color: var(--color-gray-800);
+  color: var(--color-gray-100);
+}
+
+button,
+a {
+  cursor: pointer;
+  
+  &:focus-visible {
+    outline: 1px solid var(--color-gray-100);
+  }
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
