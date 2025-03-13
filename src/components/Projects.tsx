@@ -54,7 +54,7 @@ const projects = [
 export function Projects() {
   return (
     <section className="py-8 lg:py-24" id="projects">
-      <div className="max-w-7xl w-full mx-auto px-4">
+      <div className="max-w-7xl w-full mx-auto px-4 appear">
         <Title sectionTitle="Projetos" phrase="Veja os destaques" />
 
         <div

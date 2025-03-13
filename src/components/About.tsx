@@ -14,10 +14,10 @@ import { IoLogoJavascript } from "react-icons/io"
 export function About() {
   return (
     <section
-      className="py-8 lg:py-24 bg-gray-900 grid justify-center"
+      className="py-8 lg:py-24 bg-gray-900 grid justify-center animate-(--animate-appear)"
       id="about"
     >
-      <div className="max-w-7xl w-full mx-auto px-4 flex flex-col items-center gap-8 lg:gap-16">
+      <div className="max-w-7xl w-full mx-auto px-4 flex flex-col items-center gap-8 lg:gap-16 appear">
         <Title
           sectionTitle="SOBRE MIM"
           phrase="Conheça um pouco da minha história"

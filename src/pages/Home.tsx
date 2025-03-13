@@ -43,6 +43,8 @@ export function Home() {
         <button
           type="button"
           onClick={scrollToTop}
+          title="Ir para o topo"
+          aria-label="Ir para o topo"
           className="w-8 h-8 bg-gray-700 rounded-full grid place-items-center
           ml-auto mt-4 hover:brightness-120 transition"
         >

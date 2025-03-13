@@ -31,7 +31,7 @@ interface Props {
 export function Menu({ menuIsOpen = false }: Props) {
   return (
     <div
-      className={`fixed w-full lg:hidden transition-all duration-200 ease-in-out 
+      className={`fixed z-10 w-full lg:hidden transition-all duration-200 ease-in-out 
         ${
           menuIsOpen
             ? "opacity-100 translate-y-0"
@@ -57,6 +57,7 @@ export function Menu({ menuIsOpen = false }: Props) {
           <span>Tema: </span>
           <button
             type="button"
+            aria-label="Escuro/claro"
             className="border border-gray100 p-2 rounded hover:text-blue-500 transition"
           >
             <MdLightMode />

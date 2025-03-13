@@ -62,6 +62,7 @@ export function Header({ handleMenuIsOpen }: Props) {
           className="hidden lg:block text-gray-100 hover:text-blue-500
           transition"
           title="Tema: Escuro/Claro"
+          aria-label="Tema: Escuro/Claro"
         >
           <MdLightMode size={24} />
         </button>
@@ -70,6 +71,8 @@ export function Header({ handleMenuIsOpen }: Props) {
           type="button"
           className="lg:hidden leading-0 ml-auto text-gray-100 hover:text-blue-500
           transition"
+          title="Menu"
+          aria-label="Menu"
           onClick={handleMenuIsOpen}
         >
           <BiMenuAltRight size={32} />
