@@ -51,7 +51,7 @@ export function Hero() {
         type="button"
         title="Veja mais"
         aria-label="Veja mais"
-        className="absolute bottom-2 lg:bottom-10 left-1/2
+        className="absolute bottom-2 lg:bottom-10 left-[calc(50%-16px)]
         animate-(--animate-increaseLight) dark:animate-(--animate-increaseDark)
         transition duration-200 text-stone-400 dark:text-gray-300"
       >
