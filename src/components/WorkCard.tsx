@@ -6,10 +6,10 @@ interface Props {
 
 export function WorkCard({ title, description, icon }: Props) {
   return (
-    <div className="border-2 border-gray-800 rounded-xl p-5">
+    <div className="border-2 border-stone-200 dark:border-gray-800 rounded-xl p-5">
       {icon}
       <h3 className="font-bold mt-5">{title}</h3>
-      <small className="text-sm text-gray-200">{description}</small>
+      <small className="text-sm text-stone-500 dark:text-gray-200">{description}</small>
     </div>
   )
 }

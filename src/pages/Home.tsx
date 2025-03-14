@@ -27,7 +27,7 @@ export function Home() {
   }
 
   return (
-    <section>
+    <div>
       <Header handleMenuIsOpen={handleMenuIsOpen} />
       <Menu menuIsOpen={menuIsOpen} />
 
@@ -45,12 +45,12 @@ export function Home() {
           onClick={scrollToTop}
           title="Ir para o topo"
           aria-label="Ir para o topo"
-          className="w-8 h-8 bg-gray-700 rounded-full grid place-items-center
-          ml-auto mt-4 hover:brightness-120 transition"
+          className="w-8 h-8 bg-stone-300 dark:bg-gray-700 rounded-full grid place-items-center
+          ml-auto mt-4 hover:brightness-80 dark:hover:brightness-120 transition shadow-sm"
         >
           <RxCaretUp size={28} />
         </button>
       </footer>
-    </section>
+    </div>
   )
 }

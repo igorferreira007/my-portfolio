@@ -20,10 +20,10 @@
 
   /* LIGHT */
   --color-teal-600: #1c9b91;
-  --color-green-700: #448d16;
+  --color-green-600: #448d16;
   --color-orange-600: #c66924;
   --color-purple-600: #7d43b0;
-  --color-blue-700: #1542a0;
+  --color-blue-600: #1542a0;
   --color-stone-100: #f2f1ee;
   --color-stone-200: #e9e7e2;
   --color-stone-300: #d6d3cb;
@@ -39,14 +39,15 @@
     }
   }
 
-  --animate-increase: increase 2s ease-in-out infinite;
+  --animate-increaseDark: increaseDark 2s ease-in-out infinite;
+  --animate-increaseLight: increaseLight 2s ease-in-out infinite;
   --animate-slideRightToLeft: slideRightToLeft 1s ease-in-out, pulse 5s ease infinite;
   --animate-slideLeftToRight: slideLeftToRight 1s ease-in-out;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
-  background-color: var(--color-gray-800);
-  color: var(--color-gray-100);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -66,7 +67,7 @@ a {
   animation-range: entry 0 entry 360px;
 }
 
-@keyframes increase {
+@keyframes increaseDark {
   0% {
     scale: 1;
     filter: brightness(1);
@@ -75,6 +76,23 @@ a {
   50% {
     scale: 1.15;
     filter: brightness(1.8);
+  }
+
+  100% {
+    scale: 1;
+    filter: brightness(1);
+  }
+}
+
+@keyframes increaseLight {
+  0% {
+    scale: 1;
+    filter: brightness(1);
+  }
+
+  50% {
+    scale: 1.15;
+    filter: brightness(0.2);
   }
 
   100% {

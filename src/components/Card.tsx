@@ -10,8 +10,8 @@ export function Card({ name, description, image, link }: Props) {
     <a
       href={link}
       target="_blank"
-      className="group bg-gray-700 p-3 rounded-xl w-full shadow-md
-      shadow-gray-900/50 hover:cursor-pointer hover:scale-105 transition"
+      className="group bg-stone-300 dark:bg-gray-700 p-3 rounded-xl w-full
+      shadow-md dark:shadow-gray-900/50 hover:cursor-pointer hover:scale-105 transition"
     >
       <figure>
         <img
@@ -23,7 +23,7 @@ export function Card({ name, description, image, link }: Props) {
         />
         <figcaption className="mt-6">
           <h3 className="font-bold">{name}</h3>
-          <small className="text-gray-200 text-sm line-clamp-2">
+          <small className="text-stone-500 dark:text-gray-200 text-sm line-clamp-2">
             {description}
           </small>
         </figcaption>

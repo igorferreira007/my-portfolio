@@ -8,7 +8,7 @@ export function Contacts() {
     <section className="pt-8 lg:pt-24" id="contacts">
       <div className="max-w-7xl w-full mx-auto px-4 appear">
         <Title sectionTitle="Contatos" phrase="Gostou do meu trabalho?" />
-        <p className="text-sm text-gray-200 text-center mt-2">
+        <p className="text-sm text-stone-500 dark:text-gray-200 text-center mt-2">
           Entre em contato ou acompanhe as minhas redes sociais!
         </p>
 

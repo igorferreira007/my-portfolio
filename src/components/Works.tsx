@@ -5,7 +5,7 @@ import { MdOutlineDesignServices } from "react-icons/md"
 
 export function Works() {
   return (
-    <section className="py-8 lg:py-24 bg-gray-900" id="works">
+    <section className="py-8 lg:py-24 bg-stone-100 dark:bg-gray-900" id="works">
       <div className="max-w-7xl w-full mx-auto px-4 appear">
         <Title
           sectionTitle="Meus serviços"
