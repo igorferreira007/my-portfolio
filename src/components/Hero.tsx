@@ -32,7 +32,7 @@ export function Hero() {
         </div>
 
         <a
-          href="../../public/assets/Curriculo.pdf"
+          href="../../public/Curriculo.pdf"
           download="Igor-Ferreira-CV.pdf"
           className="bg-orange-600 dark:bg-blue-500 rounded-lg px-6 py-4 text-sm font-medium
           lg:text-lg hover:brightness-110 hover:scale-110 transition mt-8 lg:mt-22"
