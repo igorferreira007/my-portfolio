@@ -37,10 +37,10 @@ export function Header({ handleMenuIsOpen }: Props) {
   return (
     <header
       className="bg-stone-200 dark:bg-gray-800 lg:bg-stone-200/50
-      lg:dark:bg-gray-800/50 lg:backdrop-blur-xs z-50 sticky top-0"
+      lg:dark:bg-gray-800/50 lg:backdrop-blur-xs z-50 sticky top-0 py-4 lg:py-8"
       id="header"
     >
-      <div className="flex items-center max-w-7xl w-full gap-12 mx-auto px-4 py-8">
+      <div className="flex items-center max-w-7xl w-full gap-12 mx-auto px-4">
         <h1 className="font-bold text-xl lg:text-2xl text-stone-600 dark:text-gray-100">
           Igor Ferreira
         </h1>
