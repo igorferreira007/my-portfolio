@@ -10,7 +10,7 @@ import { Tag } from "./Tag"
 import { Title } from "./Title"
 import { SiStyledcomponents, SiTailwindcss, SiTypescript } from "react-icons/si"
 import { IoLogoJavascript } from "react-icons/io"
-import { useContext, useEffect, useState } from "react"
+import { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 
 export function About() {
