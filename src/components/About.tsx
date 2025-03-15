@@ -10,21 +10,11 @@ import { Tag } from "./Tag"
 import { Title } from "./Title"
 import { SiStyledcomponents, SiTailwindcss, SiTypescript } from "react-icons/si"
 import { IoLogoJavascript } from "react-icons/io"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { ThemeContext } from "../contexts/ThemeContext"
 
 export function About() {
-  const [theme, setTheme] = useState("")
-
-  function getCurrentTheme() {
-    const [currentTheme] = document.documentElement.classList
-      .toString()
-      .split(" ")
-    setTheme(currentTheme)
-  }
-
-  useEffect(() => {
-    getCurrentTheme()
-  }, [theme])
+  const { currentTheme } = useContext(ThemeContext)
 
   return (
     <section
@@ -57,13 +47,13 @@ export function About() {
           <Tag
             name="GitHub"
             icon={FaGithub}
-            colorIcon={theme === "dark" ? "#C0C4CE" : "black"}
+            colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
           />
           <Tag name="Tailwind" icon={SiTailwindcss} colorIcon="#38BDF8" />
           <Tag
             name="Styled-Components"
             icon={SiStyledcomponents}
-            colorIcon={theme === "dark" ? "#C0C4CE" : "black"}
+            colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
           />
           <Tag name="HTML" icon={FaHtml5} colorIcon="#E3646E" />
           <Tag name="CSS" icon={FaCss3Alt} colorIcon="#3996DB" />
