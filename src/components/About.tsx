@@ -42,24 +42,24 @@ export function About() {
         </p>
 
         <div className="flex flex-wrap gap-3 justify-center max-w-189">
+          <Tag name="HTML" icon={FaHtml5} colorIcon="#E3646E" />
+          <Tag name="CSS" icon={FaCss3Alt} colorIcon="#3996DB" />
+          <Tag name="JavaScript" icon={IoLogoJavascript} colorIcon="#EABD5F" />
+          <Tag name="TypeScript" icon={SiTypescript} colorIcon="#007ACC" />
+          <Tag name="React" icon={FaReact} colorIcon="#3996DB" />
+          <Tag name="Tailwind" icon={SiTailwindcss} colorIcon="#38BDF8" />
           <Tag name="Node.js" icon={FaNodeJs} colorIcon="#82BC4F" />
+          <Tag
+            name="Styled-Components"
+            icon={SiStyledcomponents}
+            colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
+          />
           <Tag name="Git" icon={FaGitAlt} colorIcon="#F34F29" />
           <Tag
             name="GitHub"
             icon={FaGithub}
             colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
           />
-          <Tag name="Tailwind" icon={SiTailwindcss} colorIcon="#38BDF8" />
-          <Tag
-            name="Styled-Components"
-            icon={SiStyledcomponents}
-            colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
-          />
-          <Tag name="HTML" icon={FaHtml5} colorIcon="#E3646E" />
-          <Tag name="CSS" icon={FaCss3Alt} colorIcon="#3996DB" />
-          <Tag name="JavaScript" icon={IoLogoJavascript} colorIcon="#EABD5F" />
-          <Tag name="React" icon={FaReact} colorIcon="#3996DB" />
-          <Tag name="TypeScript" icon={SiTypescript} colorIcon="#007ACC" />
         </div>
       </div>
     </section>
