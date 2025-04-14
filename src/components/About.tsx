@@ -31,14 +31,18 @@ export function About() {
           className="text-sm lg:text-base text-stone-500 dark:text-gray-200 text-center
           leading-6 max-w-180 w-full lg:text-justify"
         >
-          Olá, meu nome é Igor Ferreira, sou de São José dos Campos - SP e sou
-          apaixonado por programação. Atualmente, estou em busca da minha
-          primeira oportunidade como desenvolvedor. Tenho um curso técnico em
-          programação e, no momento, estou me especializando em desenvolvimento
-          full-stack através da Rocketseat.
+          E aí! Sou o Igor Ferreira, moro em São José dos Campos - SP e
+          encontrei na programação minha maior motivação profissional. Gosto de
+          criar interfaces bem feitas, intuitivas e funcionais — por isso, estou
+          mergulhado no mundo do Front-End, mas sem deixar o Back-End de lado
+          (Node.js é meu aliado por aqui). Tenho formação técnica em programação
+          e atualmente sigo me desenvolvendo com a Rocketseat, onde estou focado
+          em me tornar um dev full-stack, colocando a mão na massa em diversos
+          projetos.
           <br />
           <br />
-          Abaixo, você encontrará algumas das tecnologias com as quais trabalho:
+          Logo abaixo você vai ver as tecnologias que fazem parte do meu dia a
+          dia:
         </p>
 
         <div className="flex flex-wrap gap-3 justify-center max-w-189">
