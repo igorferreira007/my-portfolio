@@ -1,2 +1,2 @@
 ### Publicado em:  
-https://igorferreiradev.netlify.app/
+https://igorferreiradev.com.br/
