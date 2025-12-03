@@ -26,7 +26,7 @@ export function Hero() {
         <div className="flex items-center mt-2 lg:mt-6">
           <img src={bracket1} className="invert dark:invert-0" />
           <h2 className="text-xl lg:text-5xl font-bold text-center">
-            Desenvolvedor <span className="text-nowrap">Front-End</span>
+            Desenvolvedor <span className="text-nowrap">Full Stack</span>
           </h2>
           <img src={bracket2} className="invert dark:invert-0" />
         </div>

@@ -1,5 +1,6 @@
 import {
   FaCss3Alt,
+  FaDocker,
   FaGitAlt,
   FaGithub,
   FaHtml5,
@@ -8,10 +9,18 @@ import {
 } from "react-icons/fa"
 import { Tag } from "./Tag"
 import { Title } from "./Title"
-import { SiStyledcomponents, SiTailwindcss, SiTypescript } from "react-icons/si"
+import {
+  SiExpress,
+  SiFastify,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript,
+  SiVitest,
+} from "react-icons/si"
 import { IoLogoJavascript } from "react-icons/io"
 import { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
+import { BiLogoPostgresql } from "react-icons/bi"
 
 export function About() {
   const { currentTheme } = useContext(ThemeContext)
@@ -31,14 +40,16 @@ export function About() {
           className="text-sm lg:text-base text-stone-500 dark:text-gray-200 text-center
           leading-6 max-w-180 w-full lg:text-justify"
         >
-          E aí! Sou o Igor Ferreira, moro em São José dos Campos - SP e
-          encontrei na programação minha maior motivação profissional. Gosto de
-          criar interfaces bem feitas, intuitivas e funcionais — por isso, estou
-          mergulhado no mundo do Front-End, mas sem deixar o Back-End de lado
-          (Node.js é meu aliado por aqui). Tenho formação técnica em programação
-          e atualmente sigo me desenvolvendo com a Rocketseat, onde estou focado
-          em me tornar um dev full-stack, colocando a mão na massa em diversos
-          projetos.
+          E aí! Sou o Igor Ferreira, moro em São José dos Campos – SP e
+          encontrei na programação minha maior motivação profissional. Como
+          desenvolvedor Full Stack, gosto de criar interfaces bem feitas,
+          intuitivas e funcionais, ao mesmo tempo em que construo APIs robustas
+          e bem estruturadas no back-end. Trabalho diariamente com tecnologias
+          do ecossistema JavaScript/TypeScript — React no front e Node.js no
+          back — e sigo evoluindo continuamente através dos estudos e da prática
+          em diversos projetos reais. Tenho formação técnica em programação e
+          estou sempre buscando aprender algo novo que eleve a qualidade do que
+          eu entrego.
           <br />
           <br />
           Logo abaixo você vai ver as tecnologias que fazem parte do meu dia a
@@ -64,6 +75,19 @@ export function About() {
             icon={FaGithub}
             colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
           />
+          <Tag
+            name="Fastify"
+            icon={SiFastify}
+            colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
+          />
+          <Tag
+            name="Express"
+            icon={SiExpress}
+            colorIcon={currentTheme === "dark" ? "#C0C4CE" : "#000"}
+          />
+          <Tag name="Docker" icon={FaDocker} colorIcon="#1D63ED" />
+          <Tag name="PostgreSQL" icon={BiLogoPostgresql} colorIcon="#336791" />
+          <Tag name="Vitest" icon={SiVitest} colorIcon="#ACD268" />
         </div>
       </div>
     </section>
